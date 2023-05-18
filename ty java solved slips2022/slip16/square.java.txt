@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+interface operation
+{
+public int square();
+}
+static class number implements operation
+{
+int num;
+number(int num)
+{
+this.num = num;
+}
+public int square()
+{
+return (num * num );
+}
+}
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("enter a number:");
+int num = sc.nextInt();
+number n1 = new number(num);
+System.out.println("Square of " + num + " is " + n1.square());
+}
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main 
+{
+  public static void main(String[] args) 
+{
+    Scanner input = new Scanner(System.in);
+    System.out.println("What is your Firstname:"); 
+    String fname = input.nextLine(); 
+    System.out.println("What is your Lastname:"); 
+    String lname = input.nextLine();
+    System.out.print("Enter Your weight in Kg:");
+    double Kg = input.nextDouble();
+    System.out.print("Enter Your Height in Meters :");
+    double Meters = input.nextDouble();
+    double BMI = (Kg) / ((Meters) * (Meters));
+    System.out.print("BMI of " + fname + lname + " is " + BMI );
+  }
+}
